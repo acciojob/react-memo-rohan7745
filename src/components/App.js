@@ -37,7 +37,7 @@ const App = () => {
         <span>Count: {count}</span>
         <button onClick={incrementCount}>Increment</button>
       </div>
-
+<hr></hr>
       <div>
         <input type="text" value={memoText} onChange={handleMemoInputChange} />
         <button onClick={addMemoItem}>Submit</button>
