@@ -35,21 +35,22 @@ function Memo() {
     <div>
       <h1>Memo</h1>
       <div>
-        <button onClick={handleAddTodo}>Add Todo</button>
+        <button id="add-todo-btn" onClick={handleAddTodo}>Add Todo</button>
         <span>{todos.length}</span>
       </div>
       <div>
-        <button onClick={handleIncrement}>Increment</button>
+        <button id="incr-cnt" onClick={handleIncrement}>Increment</button>
         <span>{count}</span>
       </div>
       <div>
         <input 
+          id="skill-input"
           type="text" 
           value={inputText} 
           onChange={handleInputChange} 
           placeholder="Enter text (greater than 5 characters)" 
         />
-        <button onClick={handleAddMemoItem}>Submit</button>
+        <button id="submit-skill-btn" onClick={handleAddMemoItem}>Submit</button>
       </div>
       <div>
         <ul>
